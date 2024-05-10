@@ -1,0 +1,6 @@
+[submodule "whisper.cpp"]
+	path = whisper.cpp
+	url = git@github.com:ggerganov/whisper.cpp.git
+[submodule "libfvad"]
+	path = libfvad
+	url = git@github.com:gfreezy/libfvad.git

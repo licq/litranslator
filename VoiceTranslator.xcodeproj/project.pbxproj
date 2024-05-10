@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA05E20E2B9B61E800B2B5D9 /* models in Resources */ = {isa = PBXBuildFile; fileRef = DA05E20C2B9B4EF900B2B5D9 /* models */; };
+		DA0B4ADA2B9D98AA00BEDD6C /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B4AD92B9D98AA00BEDD6C /* TranslateView.swift */; };
+		DA0B4ADC2B9D98D300BEDD6C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B4ADB2B9D98D300BEDD6C /* Profile.swift */; };
+		DA0B4ADE2B9DC79700BEDD6C /* WhisperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B4ADD2B9DC79700BEDD6C /* WhisperTest.swift */; };
+		DA10AECA2BB2CF5500F7728C /* HistoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AEC92BB2CF5500F7728C /* HistoriesView.swift */; };
+		DA1E20322B9AFAA400FCF7B1 /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1E20312B9AFAA400FCF7B1 /* Transcriber.swift */; };
+		DA205F342BB704F1003880B7 /* whisper in Frameworks */ = {isa = PBXBuildFile; productRef = DA205F332BB704F1003880B7 /* whisper */; };
+		DA205F362BB704F1003880B7 /* libfvad in Frameworks */ = {isa = PBXBuildFile; productRef = DA205F352BB704F1003880B7 /* libfvad */; };
+		DA205F382BB704F1003880B7 /* onnxruntime in Frameworks */ = {isa = PBXBuildFile; productRef = DA205F372BB704F1003880B7 /* onnxruntime */; };
+		DA205F3A2BB704F1003880B7 /* onnxruntime_extensions in Frameworks */ = {isa = PBXBuildFile; productRef = DA205F392BB704F1003880B7 /* onnxruntime_extensions */; };
+		DA205F3D2BB7054B003880B7 /* OpenCC in Frameworks */ = {isa = PBXBuildFile; productRef = DA205F3C2BB7054B003880B7 /* OpenCC */; };
+		DA2768E22B9163E8000D55A2 /* VoiceTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2768E12B9163E8000D55A2 /* VoiceTranslatorApp.swift */; };
+		DA2768E62B9163E9000D55A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2768E52B9163E9000D55A2 /* Assets.xcassets */; };
+		DA2768EA2B9163E9000D55A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2768E92B9163E9000D55A2 /* Preview Assets.xcassets */; };
+		DA320B162B9C3724003EE47A /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA320B152B9C3724003EE47A /* Speaker.swift */; };
+		DA421E9C2BAB1393008B5889 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421E9B2BAB1393008B5889 /* Processor.swift */; };
+		DA4676C52B9EB04000C7679A /* OnlineTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4676C42B9EB04000C7679A /* OnlineTranslator.swift */; };
+		DA4676C92B9EB4EA00C7679A /* TranslatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4676C82B9EB4EA00C7679A /* TranslatorTest.swift */; };
+		DA48BF182BA98581009A6B88 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48BF172BA98581009A6B88 /* Dialog.swift */; };
+		DA4B71722B9861280032061E /* Whisper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B71712B9861280032061E /* Whisper.swift */; };
+		DA5EBA2A2BB3E15B00AB40C7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5EBA292BB3E15B00AB40C7 /* SettingsView.swift */; };
+		DA5EBA2C2BB41D1D00AB40C7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DA5EBA2B2BB41D1D00AB40C7 /* Localizable.xcstrings */; };
+		DA6A00212B9F22880035FF16 /* ApplicationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A00202B9F22880035FF16 /* ApplicationTest.swift */; };
+		DA6A00232B9FF77C0035FF16 /* MicrosoftTranslatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A00222B9FF77C0035FF16 /* MicrosoftTranslatorTest.swift */; };
+		DA6A00252B9FF84B0035FF16 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A00242B9FF84B0035FF16 /* Translator.swift */; };
+		DA6A00272B9FF87C0035FF16 /* MicrosoftTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A00262B9FF87C0035FF16 /* MicrosoftTranslator.swift */; };
+		DA731C252BAED71600D66874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA731C242BAED71600D66874 /* ContentView.swift */; };
+		DA731C272BAF0E1700D66874 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA731C262BAF0E1700D66874 /* AudioRecorder.swift */; };
+		DA7769652B9369B200D9C3D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7769642B9369B200D9C3D7 /* Message.swift */; };
+		DA7769682B936A0B00D9C3D7 /* TranslateMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7769672B936A0B00D9C3D7 /* TranslateMessageView.swift */; };
+		DA8281D62BAFF55100696522 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA8281D52BAFF55100696522 /* ding.wav */; };
+		DA8281DA2BAFFBBA00696522 /* DingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8281D92BAFFBBA00696522 /* DingPlayer.swift */; };
+		DA9EB24D2BBCF1CD00771ACA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EB24C2BBCF1CD00771ACA /* Errors.swift */; };
+		DAA674892B9D5AC200ACB70F /* LanguageAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA674882B9D5AC200ACB70F /* LanguageAndText.swift */; };
+		DABA83B22BB1642000DE8C77 /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA83B12BB1642000DE8C77 /* AssistantView.swift */; };
+		DABA83B42BB1695200DE8C77 /* AssistantDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA83B32BB1695200DE8C77 /* AssistantDialog.swift */; };
+		DABA83B62BB16C5A00DE8C77 /* AssistantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA83B52BB16C5A00DE8C77 /* AssistantViewModel.swift */; };
+		DABA83B82BB183B400DE8C77 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA83B72BB183B400DE8C77 /* Assistant.swift */; };
+		DABA83BA2BB18AC100DE8C77 /* AssistantDialogTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA83B92BB18AC100DE8C77 /* AssistantDialogTest.swift */; };
+		DACC204B2BA3089400A67E35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC204A2BA3089400A67E35 /* Constants.swift */; };
+		DACC204D2BA3E5ED00A67E35 /* TranslateHistoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC204C2BA3E5ED00A67E35 /* TranslateHistoriesView.swift */; };
+		DAE2EF262BBD56B8004FBD52 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DAE2EF252BBD56B8004FBD52 /* InfoPlist.xcstrings */; };
+		DAE720802BB065E8002E71EC /* TranslateHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7207F2BB065E8002E71EC /* TranslateHistoryView.swift */; };
+		DAE8B5D12B9AC8BA00CED872 /* GmmDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE8B5D02B9AC8BA00CED872 /* GmmDetector.swift */; };
+		DAF08A102BAEAED200E0A5BE /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF08A0F2BAEAED200E0A5BE /* TranslateViewModel.swift */; };
+		DAF6D0E32BA1DD4400B596A9 /* VoiceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6D0E22BA1DD4400B596A9 /* VoiceDetector.swift */; };
+		DAF6D0E52BA1DD8E00B596A9 /* SileroDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6D0E42BA1DD8E00B596A9 /* SileroDetector.swift */; };
+		DAF6D0E72BA1DE3600B596A9 /* VADIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6D0E62BA1DE3600B596A9 /* VADIterator.swift */; };
+		DAF8CB3F2BB2C3150099553F /* AssistantHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8CB3E2BB2C3150099553F /* AssistantHistoryView.swift */; };
+		DAF8CB412BB2C3840099553F /* AssistantMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8CB402BB2C3840099553F /* AssistantMessageView.swift */; };
+		DAF8CB432BB2C45F0099553F /* AssistantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8CB422BB2C45F0099553F /* AssistantCardView.swift */; };
+		DAF8CB452BB2C4F30099553F /* AssistantHistoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8CB442BB2C4F30099553F /* AssistantHistoriesView.swift */; };
+		DAFD6D622BAA7133003B637A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD6D612BAA7133003B637A /* Language.swift */; };
+		DAFD6D682BAA7DFA003B637A /* TranslateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD6D672BAA7DFA003B637A /* TranslateCardView.swift */; };
+		DAFD6D6F2BAAB126003B637A /* jfk.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAFD6D6E2BAAB126003B637A /* jfk.wav */; };
+		DAFD6D712BAB0375003B637A /* TranscriberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD6D702BAB0375003B637A /* TranscriberTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA2768F02B9163E9000D55A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2768D62B9163E8000D55A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2768DD2B9163E8000D55A2;
+			remoteInfo = VoiceTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA05E20C2B9B4EF900B2B5D9 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		DA0B4AD92B9D98AA00BEDD6C /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		DA0B4ADB2B9D98D300BEDD6C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DA0B4ADD2B9DC79700BEDD6C /* WhisperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperTest.swift; sourceTree = "<group>"; };
+		DA10AEC92BB2CF5500F7728C /* HistoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesView.swift; sourceTree = "<group>"; };
+		DA1E20312B9AFAA400FCF7B1 /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcriber.swift; sourceTree = "<group>"; };
+		DA2768DE2B9163E8000D55A2 /* VoiceTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2768E12B9163E8000D55A2 /* VoiceTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceTranslatorApp.swift; sourceTree = "<group>"; };
+		DA2768E52B9163E9000D55A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2768E72B9163E9000D55A2 /* VoiceTranslator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceTranslator.entitlements; sourceTree = "<group>"; };
+		DA2768E92B9163E9000D55A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2768EF2B9163E9000D55A2 /* VoiceTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA320B152B9C3724003EE47A /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		DA421E9B2BAB1393008B5889 /* Processor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processor.swift; sourceTree = "<group>"; };
+		DA4676C42B9EB04000C7679A /* OnlineTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineTranslator.swift; sourceTree = "<group>"; };
+		DA4676C82B9EB4EA00C7679A /* TranslatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorTest.swift; sourceTree = "<group>"; };
+		DA48BF172BA98581009A6B88 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		DA4B71712B9861280032061E /* Whisper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whisper.swift; sourceTree = "<group>"; };
+		DA5EBA292BB3E15B00AB40C7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DA5EBA2B2BB41D1D00AB40C7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		DA6A00202B9F22880035FF16 /* ApplicationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTest.swift; sourceTree = "<group>"; };
+		DA6A00222B9FF77C0035FF16 /* MicrosoftTranslatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftTranslatorTest.swift; sourceTree = "<group>"; };
+		DA6A00242B9FF84B0035FF16 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		DA6A00262B9FF87C0035FF16 /* MicrosoftTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftTranslator.swift; sourceTree = "<group>"; };
+		DA731C242BAED71600D66874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA731C262BAF0E1700D66874 /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		DA7769642B9369B200D9C3D7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		DA7769672B936A0B00D9C3D7 /* TranslateMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateMessageView.swift; sourceTree = "<group>"; };
+		DA8281D52BAFF55100696522 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		DA8281D92BAFFBBA00696522 /* DingPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DingPlayer.swift; sourceTree = "<group>"; };
+		DA9EB24C2BBCF1CD00771ACA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DA9EB2522BBD4CD000771ACA /* InfoPList.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPList.xcstrings; sourceTree = "<group>"; };
+		DAA674882B9D5AC200ACB70F /* LanguageAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAndText.swift; sourceTree = "<group>"; };
+		DABA83B12BB1642000DE8C77 /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
+		DABA83B32BB1695200DE8C77 /* AssistantDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantDialog.swift; sourceTree = "<group>"; };
+		DABA83B52BB16C5A00DE8C77 /* AssistantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantViewModel.swift; sourceTree = "<group>"; };
+		DABA83B72BB183B400DE8C77 /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
+		DABA83B92BB18AC100DE8C77 /* AssistantDialogTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantDialogTest.swift; sourceTree = "<group>"; };
+		DACC204A2BA3089400A67E35 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DACC204C2BA3E5ED00A67E35 /* TranslateHistoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateHistoriesView.swift; sourceTree = "<group>"; };
+		DAE2EF252BBD56B8004FBD52 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		DAE7207F2BB065E8002E71EC /* TranslateHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateHistoryView.swift; sourceTree = "<group>"; };
+		DAE8B5D02B9AC8BA00CED872 /* GmmDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmmDetector.swift; sourceTree = "<group>"; };
+		DAF08A0F2BAEAED200E0A5BE /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
+		DAF6D0E22BA1DD4400B596A9 /* VoiceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDetector.swift; sourceTree = "<group>"; };
+		DAF6D0E42BA1DD8E00B596A9 /* SileroDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SileroDetector.swift; sourceTree = "<group>"; };
+		DAF6D0E62BA1DE3600B596A9 /* VADIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VADIterator.swift; sourceTree = "<group>"; };
+		DAF8CB3E2BB2C3150099553F /* AssistantHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHistoryView.swift; sourceTree = "<group>"; };
+		DAF8CB402BB2C3840099553F /* AssistantMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantMessageView.swift; sourceTree = "<group>"; };
+		DAF8CB422BB2C45F0099553F /* AssistantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantCardView.swift; sourceTree = "<group>"; };
+		DAF8CB442BB2C4F30099553F /* AssistantHistoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantHistoriesView.swift; sourceTree = "<group>"; };
+		DAFD6D612BAA7133003B637A /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DAFD6D672BAA7DFA003B637A /* TranslateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCardView.swift; sourceTree = "<group>"; };
+		DAFD6D6E2BAAB126003B637A /* jfk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jfk.wav; sourceTree = "<group>"; };
+		DAFD6D702BAB0375003B637A /* TranscriberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriberTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA2768EC2B9163E9000D55A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5023432B9951B4003BBBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA205F3D2BB7054B003880B7 /* OpenCC in Frameworks */,
+				DA205F3A2BB704F1003880B7 /* onnxruntime_extensions in Frameworks */,
+				DA205F382BB704F1003880B7 /* onnxruntime in Frameworks */,
+				DA205F342BB704F1003880B7 /* whisper in Frameworks */,
+				DA205F362BB704F1003880B7 /* libfvad in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA0B4AD82B9D8BD400BEDD6C /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				DA8281D92BAFFBBA00696522 /* DingPlayer.swift */,
+				DA731C262BAF0E1700D66874 /* AudioRecorder.swift */,
+				DACC20492BA3085700A67E35 /* Transcriber */,
+				DACC20472BA3082600A67E35 /* Detector */,
+				DA320B152B9C3724003EE47A /* Speaker.swift */,
+				DACC20482BA3083B00A67E35 /* Translator */,
+				DA421E9B2BAB1393008B5889 /* Processor.swift */,
+				DABA83B72BB183B400DE8C77 /* Assistant.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		DA2768D52B9163E8000D55A2 = {
+			isa = PBXGroup;
+			children = (
+				DA2768E02B9163E8000D55A2 /* VoiceTranslator */,
+				DA2768F22B9163E9000D55A2 /* VoiceTranslatorTests */,
+				DA2768DF2B9163E8000D55A2 /* Products */,
+				DAE8B5CE2B9AC8A600CED872 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2768DF2B9163E8000D55A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2768DE2B9163E8000D55A2 /* VoiceTranslator.app */,
+				DA2768EF2B9163E9000D55A2 /* VoiceTranslatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2768E02B9163E8000D55A2 /* VoiceTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B71752B9872D70032061E /* Resources */,
+				DA7769662B9369FC00D9C3D7 /* Views */,
+				DA0B4AD82B9D8BD400BEDD6C /* Applications */,
+				DA7769632B93699B00D9C3D7 /* Models */,
+				DA4676C62B9EB05800C7679A /* Constants */,
+				DA2768E72B9163E9000D55A2 /* VoiceTranslator.entitlements */,
+				DA2768E12B9163E8000D55A2 /* VoiceTranslatorApp.swift */,
+				DA731C242BAED71600D66874 /* ContentView.swift */,
+				DAE2EF252BBD56B8004FBD52 /* InfoPlist.xcstrings */,
+				DA2768E52B9163E9000D55A2 /* Assets.xcassets */,
+				DA2768E82B9163E9000D55A2 /* Preview Content */,
+			);
+			path = VoiceTranslator;
+			sourceTree = "<group>";
+		};
+		DA2768E82B9163E9000D55A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA2768E92B9163E9000D55A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA2768F22B9163E9000D55A2 /* VoiceTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFD6D6E2BAAB126003B637A /* jfk.wav */,
+				DA0B4ADD2B9DC79700BEDD6C /* WhisperTest.swift */,
+				DA4676C82B9EB4EA00C7679A /* TranslatorTest.swift */,
+				DA6A00202B9F22880035FF16 /* ApplicationTest.swift */,
+				DA6A00222B9FF77C0035FF16 /* MicrosoftTranslatorTest.swift */,
+				DAFD6D702BAB0375003B637A /* TranscriberTest.swift */,
+				DABA83B92BB18AC100DE8C77 /* AssistantDialogTest.swift */,
+			);
+			path = VoiceTranslatorTests;
+			sourceTree = "<group>";
+		};
+		DA4676C62B9EB05800C7679A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DAFD6D612BAA7133003B637A /* Language.swift */,
+				DACC204A2BA3089400A67E35 /* Constants.swift */,
+				DA9EB24C2BBCF1CD00771ACA /* Errors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DA4B71752B9872D70032061E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA8281D52BAFF55100696522 /* ding.wav */,
+				DA9EB2522BBD4CD000771ACA /* InfoPList.xcstrings */,
+				DA5EBA2B2BB41D1D00AB40C7 /* Localizable.xcstrings */,
+				DA05E20C2B9B4EF900B2B5D9 /* models */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA7769632B93699B00D9C3D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA7769642B9369B200D9C3D7 /* Message.swift */,
+				DAA674882B9D5AC200ACB70F /* LanguageAndText.swift */,
+				DA0B4ADB2B9D98D300BEDD6C /* Profile.swift */,
+				DA48BF172BA98581009A6B88 /* Dialog.swift */,
+				DABA83B32BB1695200DE8C77 /* AssistantDialog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA7769662B9369FC00D9C3D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7207F2BB065E8002E71EC /* TranslateHistoryView.swift */,
+				DA7769672B936A0B00D9C3D7 /* TranslateMessageView.swift */,
+				DACC204C2BA3E5ED00A67E35 /* TranslateHistoriesView.swift */,
+				DAFD6D672BAA7DFA003B637A /* TranslateCardView.swift */,
+				DA0B4AD92B9D98AA00BEDD6C /* TranslateView.swift */,
+				DAF08A0F2BAEAED200E0A5BE /* TranslateViewModel.swift */,
+				DABA83B12BB1642000DE8C77 /* AssistantView.swift */,
+				DABA83B52BB16C5A00DE8C77 /* AssistantViewModel.swift */,
+				DAF8CB3E2BB2C3150099553F /* AssistantHistoryView.swift */,
+				DAF8CB402BB2C3840099553F /* AssistantMessageView.swift */,
+				DAF8CB422BB2C45F0099553F /* AssistantCardView.swift */,
+				DAF8CB442BB2C4F30099553F /* AssistantHistoriesView.swift */,
+				DA10AEC92BB2CF5500F7728C /* HistoriesView.swift */,
+				DA5EBA292BB3E15B00AB40C7 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DACC20472BA3082600A67E35 /* Detector */ = {
+			isa = PBXGroup;
+			children = (
+				DAE8B5D02B9AC8BA00CED872 /* GmmDetector.swift */,
+				DAF6D0E22BA1DD4400B596A9 /* VoiceDetector.swift */,
+				DAF6D0E42BA1DD8E00B596A9 /* SileroDetector.swift */,
+				DAF6D0E62BA1DE3600B596A9 /* VADIterator.swift */,
+			);
+			path = Detector;
+			sourceTree = "<group>";
+		};
+		DACC20482BA3083B00A67E35 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				DA4676C42B9EB04000C7679A /* OnlineTranslator.swift */,
+				DA6A00242B9FF84B0035FF16 /* Translator.swift */,
+				DA6A00262B9FF87C0035FF16 /* MicrosoftTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		DACC20492BA3085700A67E35 /* Transcriber */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B71712B9861280032061E /* Whisper.swift */,
+				DA1E20312B9AFAA400FCF7B1 /* Transcriber.swift */,
+			);
+			path = Transcriber;
+			sourceTree = "<group>";
+		};
+		DAE8B5CE2B9AC8A600CED872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA2768DD2B9163E8000D55A2 /* VoiceTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2769032B9163E9000D55A2 /* Build configuration list for PBXNativeTarget "VoiceTranslator" */;
+			buildPhases = (
+				DA2768DA2B9163E8000D55A2 /* Sources */,
+				DA2768DC2B9163E8000D55A2 /* Resources */,
+				DA5023432B9951B4003BBBC2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceTranslator;
+			packageProductDependencies = (
+				DA205F332BB704F1003880B7 /* whisper */,
+				DA205F352BB704F1003880B7 /* libfvad */,
+				DA205F372BB704F1003880B7 /* onnxruntime */,
+				DA205F392BB704F1003880B7 /* onnxruntime_extensions */,
+				DA205F3C2BB7054B003880B7 /* OpenCC */,
+			);
+			productName = VoiceTranslator;
+			productReference = DA2768DE2B9163E8000D55A2 /* VoiceTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA2768EE2B9163E9000D55A2 /* VoiceTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2769062B9163E9000D55A2 /* Build configuration list for PBXNativeTarget "VoiceTranslatorTests" */;
+			buildPhases = (
+				DA2768EB2B9163E9000D55A2 /* Sources */,
+				DA2768EC2B9163E9000D55A2 /* Frameworks */,
+				DA2768ED2B9163E9000D55A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2768F12B9163E9000D55A2 /* PBXTargetDependency */,
+			);
+			name = VoiceTranslatorTests;
+			productName = VoiceTranslatorTests;
+			productReference = DA2768EF2B9163E9000D55A2 /* VoiceTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2768D62B9163E8000D55A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					DA2768DD2B9163E8000D55A2 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1530;
+					};
+					DA2768EE2B9163E9000D55A2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DA2768DD2B9163E8000D55A2;
+					};
+				};
+			};
+			buildConfigurationList = DA2768D92B9163E8000D55A2 /* Build configuration list for PBXProject "VoiceTranslator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+				ja,
+				ko,
+				ar,
+				de,
+				fr,
+				it,
+				ru,
+				es,
+				uk,
+				ro,
+				cs,
+				el,
+				id,
+				sv,
+				tr,
+				bg,
+				da,
+				nl,
+				et,
+				fi,
+				hu,
+				lv,
+				lt,
+				nb,
+				pl,
+				"pt-PT",
+				sk,
+				sl,
+			);
+			mainGroup = DA2768D52B9163E8000D55A2;
+			packageReferences = (
+				DAF0B9342BB6F7DF00DE7E40 /* XCRemoteSwiftPackageReference "whisper.cpp" */,
+				DA042CE02BB6FAC300C5CFF6 /* XCRemoteSwiftPackageReference "libfvad" */,
+				DA042CE12BB6FC4700C5CFF6 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */,
+				DA205F3B2BB7054B003880B7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */,
+			);
+			productRefGroup = DA2768DF2B9163E8000D55A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA2768DD2B9163E8000D55A2 /* VoiceTranslator */,
+				DA2768EE2B9163E9000D55A2 /* VoiceTranslatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA2768DC2B9163E8000D55A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE2EF262BBD56B8004FBD52 /* InfoPlist.xcstrings in Resources */,
+				DA2768EA2B9163E9000D55A2 /* Preview Assets.xcassets in Resources */,
+				DA5EBA2C2BB41D1D00AB40C7 /* Localizable.xcstrings in Resources */,
+				DA2768E62B9163E9000D55A2 /* Assets.xcassets in Resources */,
+				DA8281D62BAFF55100696522 /* ding.wav in Resources */,
+				DA05E20E2B9B61E800B2B5D9 /* models in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2768ED2B9163E9000D55A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFD6D6F2BAAB126003B637A /* jfk.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA2768DA2B9163E8000D55A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7769682B936A0B00D9C3D7 /* TranslateMessageView.swift in Sources */,
+				DAF08A102BAEAED200E0A5BE /* TranslateViewModel.swift in Sources */,
+				DAFD6D682BAA7DFA003B637A /* TranslateCardView.swift in Sources */,
+				DACC204D2BA3E5ED00A67E35 /* TranslateHistoriesView.swift in Sources */,
+				DABA83B82BB183B400DE8C77 /* Assistant.swift in Sources */,
+				DAF8CB432BB2C45F0099553F /* AssistantCardView.swift in Sources */,
+				DABA83B22BB1642000DE8C77 /* AssistantView.swift in Sources */,
+				DABA83B62BB16C5A00DE8C77 /* AssistantViewModel.swift in Sources */,
+				DAF6D0E52BA1DD8E00B596A9 /* SileroDetector.swift in Sources */,
+				DA0B4ADC2B9D98D300BEDD6C /* Profile.swift in Sources */,
+				DA7769652B9369B200D9C3D7 /* Message.swift in Sources */,
+				DA4676C52B9EB04000C7679A /* OnlineTranslator.swift in Sources */,
+				DA6A00252B9FF84B0035FF16 /* Translator.swift in Sources */,
+				DA0B4ADA2B9D98AA00BEDD6C /* TranslateView.swift in Sources */,
+				DAF8CB3F2BB2C3150099553F /* AssistantHistoryView.swift in Sources */,
+				DABA83B42BB1695200DE8C77 /* AssistantDialog.swift in Sources */,
+				DA8281DA2BAFFBBA00696522 /* DingPlayer.swift in Sources */,
+				DA5EBA2A2BB3E15B00AB40C7 /* SettingsView.swift in Sources */,
+				DAA674892B9D5AC200ACB70F /* LanguageAndText.swift in Sources */,
+				DAF6D0E32BA1DD4400B596A9 /* VoiceDetector.swift in Sources */,
+				DACC204B2BA3089400A67E35 /* Constants.swift in Sources */,
+				DA48BF182BA98581009A6B88 /* Dialog.swift in Sources */,
+				DA421E9C2BAB1393008B5889 /* Processor.swift in Sources */,
+				DA10AECA2BB2CF5500F7728C /* HistoriesView.swift in Sources */,
+				DA4B71722B9861280032061E /* Whisper.swift in Sources */,
+				DA2768E22B9163E8000D55A2 /* VoiceTranslatorApp.swift in Sources */,
+				DA9EB24D2BBCF1CD00771ACA /* Errors.swift in Sources */,
+				DAFD6D622BAA7133003B637A /* Language.swift in Sources */,
+				DA320B162B9C3724003EE47A /* Speaker.swift in Sources */,
+				DAE720802BB065E8002E71EC /* TranslateHistoryView.swift in Sources */,
+				DA731C272BAF0E1700D66874 /* AudioRecorder.swift in Sources */,
+				DAE8B5D12B9AC8BA00CED872 /* GmmDetector.swift in Sources */,
+				DAF8CB452BB2C4F30099553F /* AssistantHistoriesView.swift in Sources */,
+				DAF8CB412BB2C3840099553F /* AssistantMessageView.swift in Sources */,
+				DAF6D0E72BA1DE3600B596A9 /* VADIterator.swift in Sources */,
+				DA731C252BAED71600D66874 /* ContentView.swift in Sources */,
+				DA6A00272B9FF87C0035FF16 /* MicrosoftTranslator.swift in Sources */,
+				DA1E20322B9AFAA400FCF7B1 /* Transcriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2768EB2B9163E9000D55A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6A00232B9FF77C0035FF16 /* MicrosoftTranslatorTest.swift in Sources */,
+				DA0B4ADE2B9DC79700BEDD6C /* WhisperTest.swift in Sources */,
+				DAFD6D712BAB0375003B637A /* TranscriberTest.swift in Sources */,
+				DA4676C92B9EB4EA00C7679A /* TranslatorTest.swift in Sources */,
+				DABA83BA2BB18AC100DE8C77 /* AssistantDialogTest.swift in Sources */,
+				DA6A00212B9F22880035FF16 /* ApplicationTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA2768F12B9163E9000D55A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2768DD2B9163E8000D55A2 /* VoiceTranslator */;
+			targetProxy = DA2768F02B9163E9000D55A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA2769012B9163E9000D55A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA2769022B9163E9000D55A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DA2769042B9163E9000D55A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoiceTranslator/VoiceTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "VoiceTranslator/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = A69W8947Z5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceTranslator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiTranslator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LiTranslator needs your microphone to do speech recognition";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "\"-O3 -DNDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.licq.litranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_INCLUDE_PATHS[arch=*]" = whisper.cpp;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA2769052B9163E9000D55A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoiceTranslator/VoiceTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "VoiceTranslator/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = A69W8947Z5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceTranslator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiTranslator;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "LiTranslator needs your microphone to do speech recognition";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "\"-O3 -DNDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.licq.litranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA2769072B9163E9000D55A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = A69W8947Z5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.licq.VoiceTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceTranslator";
+			};
+			name = Debug;
+		};
+		DA2769082B9163E9000D55A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = A69W8947Z5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.licq.VoiceTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceTranslator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2768D92B9163E8000D55A2 /* Build configuration list for PBXProject "VoiceTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2769012B9163E9000D55A2 /* Debug */,
+				DA2769022B9163E9000D55A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2769032B9163E9000D55A2 /* Build configuration list for PBXNativeTarget "VoiceTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2769042B9163E9000D55A2 /* Debug */,
+				DA2769052B9163E9000D55A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2769062B9163E9000D55A2 /* Build configuration list for PBXNativeTarget "VoiceTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2769072B9163E9000D55A2 /* Debug */,
+				DA2769082B9163E9000D55A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA042CE02BB6FAC300C5CFF6 /* XCRemoteSwiftPackageReference "libfvad" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gfreezy/libfvad.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DA042CE12BB6FC4700C5CFF6 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/onnxruntime-swift-package-manager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DA205F3B2BB7054B003880B7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ddddxxx/SwiftyOpenCC.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DAF0B9342BB6F7DF00DE7E40 /* XCRemoteSwiftPackageReference "whisper.cpp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ggerganov/whisper.cpp.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA205F332BB704F1003880B7 /* whisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAF0B9342BB6F7DF00DE7E40 /* XCRemoteSwiftPackageReference "whisper.cpp" */;
+			productName = whisper;
+		};
+		DA205F352BB704F1003880B7 /* libfvad */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA042CE02BB6FAC300C5CFF6 /* XCRemoteSwiftPackageReference "libfvad" */;
+			productName = libfvad;
+		};
+		DA205F372BB704F1003880B7 /* onnxruntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA042CE12BB6FC4700C5CFF6 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */;
+			productName = onnxruntime;
+		};
+		DA205F392BB704F1003880B7 /* onnxruntime_extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA042CE12BB6FC4700C5CFF6 /* XCRemoteSwiftPackageReference "onnxruntime-swift-package-manager" */;
+			productName = onnxruntime_extensions;
+		};
+		DA205F3C2BB7054B003880B7 /* OpenCC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA205F3B2BB7054B003880B7 /* XCRemoteSwiftPackageReference "SwiftyOpenCC" */;
+			productName = OpenCC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DA2768D62B9163E8000D55A2 /* Project object */;
+}

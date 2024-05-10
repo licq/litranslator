@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "libfvad",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gfreezy/libfvad.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ed4e74e21c34dcf0276de71264d180c18cc46bdf"
+      }
+    },
+    {
+      "identity" : "onnxruntime-swift-package-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/microsoft/onnxruntime-swift-package-manager.git",
+      "state" : {
+        "revision" : "18e053d3442bea0848491c0363c170741693c2c1",
+        "version" : "1.16.0"
+      }
+    },
+    {
+      "identity" : "swiftyopencc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ddddxxx/SwiftyOpenCC.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1d8105a0f7199c90af722bff62728050c858e777"
+      }
+    },
+    {
+      "identity" : "whisper.cpp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ggerganov/whisper.cpp.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "fc366b807a17dc05813a6fcc13c8c4dfd442fa6a"
+      }
+    }
+  ],
+  "version" : 2
+}
